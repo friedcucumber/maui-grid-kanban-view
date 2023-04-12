@@ -1,18 +1,16 @@
 <!-- default badges list -->
 <!-- default badges end -->
-## DataGrid for .NET MAUI - Kanban View
+## DataGrid for .NET MAUI - Replicate a Single-Column Kanban View
 
-This example demonstrates how to implement a Kanban-like view with our [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid). In this solution, the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) contains multiple groups (Planned, Coding, Testing, Done) with items. You can drag a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) item from a group and drop it into another group.
+This example demonstrates how to implement a Kanban-like view with our [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid). In this solution, the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) contains multiple groups (Planned, Coding, Testing, Done) with items. You can drag an item from a group and drop it into another group.
 
 <img src="https://user-images.githubusercontent.com/12169834/231455223-959dfe6c-7d7e-465b-8814-d48fdcc7ad55.png" width="30%"/>
-
 
 Included control and its properties:
 
 * [DataGridView](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView): [IsColumnHeaderVisible](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.IsColumnHeaderVisible), [AllowDragDropRows](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowDragDropRows), [AllowDragDropSortedRows](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowDragDropSortedRows), [AllowGroupCollapse](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowGroupCollapse), [CustomSort](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomSort), [CustomGroup](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomGroup), [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop), [DragRow](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.DragRow), [GroupRowAppearance](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.GroupRowAppearance), [CellAppearance](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CellAppearance), [GroupRowTemplate](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.GroupRowTemplate), [TemplateColumn](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.TemplateColumn)
 
 ## Implementation Details
-
 
 * You can handle the [DataGridView.CustomSort](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomSort) event to sort groups in the order you want:
 
@@ -24,9 +22,7 @@ Included control and its properties:
     ```
     File to Look At: [MainPage.xaml.cs](CS/MainPage.xaml.cs)
 
-* If a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) group does not contain any item, the placeholder (based on the [Border](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/border) control) is displayed. To achive this, we handle the [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop) event and switch the `IsPlaceholder` property. The placeholder is displayed when the `IsPlaceholder` property is `true`. .NET MAUI [triggers](https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/triggers) allows you to conditionally display the specific element:
-
-    To control the visibility of an empty group's placeholder we used . 
+* If a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) group does not contain any item, the placeholder (based on the [Border](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/border) control) is displayed. To achive this, we handle the [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop) event and switch the `IsPlaceholder` property. The placeholder is displayed when the `IsPlaceholder` property is `true`. .NET MAUI [triggers](https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/triggers) allow you to conditionally display a specific element:
 
     ```xaml
     <dxg:TemplateColumn FieldName="Title">
@@ -78,7 +74,6 @@ Included control and its properties:
     ```
 
     File to Look At: [MainPage.xaml.cs](CS/MainPage.xaml.cs)
-
 
 ## Files to Look At
 
