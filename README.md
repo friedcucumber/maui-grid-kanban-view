@@ -4,7 +4,7 @@
 
 This example demonstrates how to implement a Kanban-like view with our [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid). In this solution, the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) contains multiple groups (Planned, Coding, Testing, Done) with items. You can drag a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) item from a group and drop it into another group.
 
-<img src="https://user-images.githubusercontent.com/12169834/228216536-48240713-be2f-45e7-9dda-dbf843682500.png" width="30%"/>
+<img src="https://user-images.githubusercontent.com/12169834/231455223-959dfe6c-7d7e-465b-8814-d48fdcc7ad55.png" width="30%"/>
 
 
 Included control and its properties:
