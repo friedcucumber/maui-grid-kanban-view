@@ -6,7 +6,7 @@ This example demonstrates how to implement a Kanban-like view with our [Data Gri
 
 <img src="https://user-images.githubusercontent.com/12169834/231455223-959dfe6c-7d7e-465b-8814-d48fdcc7ad55.png" width="30%"/>
 
-Included control and its properties:
+**Included control and its properties**:
 
 * [DataGridView](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView): [IsColumnHeaderVisible](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.IsColumnHeaderVisible), [AllowDragDropRows](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowDragDropRows), [AllowDragDropSortedRows](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowDragDropSortedRows), [AllowGroupCollapse](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.AllowGroupCollapse), [CustomSort](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomSort), [CustomGroup](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomGroup), [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop), [DragRow](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.DragRow), [GroupRowAppearance](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.GroupRowAppearance), [CellAppearance](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CellAppearance), [GroupRowTemplate](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.GroupRowTemplate), [TemplateColumn](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.TemplateColumn)
 
