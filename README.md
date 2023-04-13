@@ -22,7 +22,7 @@ This example demonstrates how to implement a Kanban-like view based on our [Data
     ```
     File to Look At: [MainPage.xaml.cs](CS/MainPage.xaml.cs)
 
-* If a [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) group does not contain any item, the placeholder (based on the [Border](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/border) control) is displayed. To achive this, we handle the [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop) event and switch the `IsPlaceholder` property. The placeholder is displayed when the `IsPlaceholder` property is `true`. .NET MAUI [triggers](https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/triggers) allow you to conditionally display a specific element:
+* If a group is empty, [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) can display a placeholder based on the [Border](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/border) control. To display placeholders, handle the [CompleteRowDragDrop](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CompleteRowDragDrop) event, enable the `IsPlaceholder` property, and use .NET MAUI [triggers](https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/triggers) to conditionally display an element that contains the placeholder:
 
     ```xaml
     <dxg:TemplateColumn FieldName="Title">
