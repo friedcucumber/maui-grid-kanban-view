@@ -2,7 +2,7 @@
 <!-- default badges end -->
 ## DataGrid for .NET MAUI - Replicate a Single-Column Kanban View
 
-This example demonstrates how to implement a Kanban-like view with our [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid). In this solution, the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) contains multiple groups (Planned, Coding, Testing, Done) with items. You can drag an item from a group and drop it into another group.
+This example demonstrates how to implement a Kanban-like view based on our [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid). In this solution, the [Data Grid](https://docs.devexpress.com/MAUI/403255/data-grid/data-grid) contains multiple groups (Planned, Coding, Testing, and Done) with items. You can drag and drop items between groups.
 
 <img src="https://user-images.githubusercontent.com/12169834/231455223-959dfe6c-7d7e-465b-8814-d48fdcc7ad55.png" width="30%"/>
 
@@ -12,7 +12,7 @@ This example demonstrates how to implement a Kanban-like view with our [Data Gri
 
 ## Implementation Details
 
-* You can handle the [DataGridView.CustomSort](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomSort) event to sort groups in the order you want:
+* You can handle the [DataGridView.CustomSort](https://docs.devexpress.com/MAUI/DevExpress.Maui.DataGrid.DataGridView.CustomSort) event to sort groups in ascending or descending order:
 
     ```csharp
     private void DataGridView_CustomSort(object sender, DevExpress.Maui.DataGrid.CustomSortEventArgs e) {
